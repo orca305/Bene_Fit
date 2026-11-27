@@ -13,6 +13,7 @@
 - [공식 데이터 소스 조사와 검증 계획](docs/DATA_SOURCES.md)
 - [RAG 및 기술 후보](docs/ARCHITECTURE.md)
 - [PostgreSQL DB 설계·ERD·이전 계획](docs/DATABASE.md)
+- **[DB 구성도 · 실제 테이블·PK·FK ERD](docs/DB_ERD.md)**
 - [오로르 기준 코드·DB 컨벤션](docs/CONVENTIONS.md)
 - [PostgreSQL 실행·적재·백업·데스크탑 복원](docs/POSTGRES_OPERATIONS.md)
 - [주요 결정](docs/DECISIONS.md)
@@ -20,6 +21,23 @@
 - [인수인계](docs/HANDOFF.md)
 
 공식 근거를 바탕으로 혜택을 탐색하고 조건을 비교하는 서비스입니다. 최종 자격 결정은 해당 기관의 심사에 따릅니다.
+
+## DB 구성도
+
+```mermaid
+flowchart LR
+    S[원천·수집] --> R[src_record / src_snapshot]
+    R --> B[benefit / benefit_ver]
+    B --> A[aply_round · 모집 회차]
+    B --> D[doc / doc_chunk]
+    D --> E[rule_evidence]
+    B --> N[rule_set / rule_node]
+    E --> N
+    N --> Q[rule_question / question]
+    D --> I[emb_input · 입력 문자열]
+```
+
+현재 PostgreSQL 기본 테이블은 20개입니다. [전체 PK·FK 구성도](docs/DB_ERD.md)에서 확인할 수 있습니다. 벡터 테이블은 모델 선택 후 별도로 적용합니다.
 
 ## API 연결 확인
 

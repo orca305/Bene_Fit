@@ -17,6 +17,8 @@
 
 ## 전체 관계
 
+실제 PostgreSQL의 PK·FK와 주요 컬럼을 표시한 [별도 DB 구성도](DB_ERD.md)도 제공한다.
+
 ```mermaid
 erDiagram
     cmmn_cd o|--o{ cmmn_cd : groups
