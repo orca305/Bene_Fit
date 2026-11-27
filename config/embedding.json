@@ -1,0 +1,14 @@
+{
+  "model": "BAAI/bge-m3",
+  "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "local_directory": "data/model-comparison/models/bge-m3",
+  "device": "cpu",
+  "dtype": "float32",
+  "dimensions": 1024,
+  "normalize_embeddings": true,
+  "max_sequence_length": 8192,
+  "batch_size": 2,
+  "threads": 4,
+  "query_prompt": "",
+  "document_prompt": ""
+}

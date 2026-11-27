@@ -1,0 +1,27 @@
+{
+  "tables": {
+    "src": "data_src", "src_rec": "src_record", "src_snap": "src_snapshot",
+    "prgm": "benefit", "prgm_ver": "benefit_ver", "ver_src": "benefit_ver_src",
+    "aply_rnd": "aply_round", "qstn": "question", "rule_evd": "rule_evidence",
+    "rule_qstn": "rule_question", "emb_inp": "emb_input", "emb_mdl": "emb_model", "emb_vec": "emb_vector"
+  },
+  "columns": {
+    "crt_at": "rgst_dttm", "start_at": "start_dttm", "end_at": "end_dttm",
+    "fst_seen_at": "first_seen_dttm", "lst_seen_at": "last_seen_dttm", "src_mod_at": "src_mod_dttm",
+    "fetch_at": "fetch_dttm", "obs_at": "obs_dttm", "pub_at": "pub_dttm",
+    "aply_start_at": "aply_start_dttm", "aply_end_at": "aply_end_dttm", "rvw_at": "review_dttm", "gen_at": "gen_dttm",
+    "eff_from": "eff_start_dt", "eff_to": "eff_end_dt", "is_use": "use_yn", "is_cur": "current_yn",
+    "is_prd_vrf": "period_verify_yn", "is_geo_vrf": "geo_verify_yn", "is_cmp": "compare_yn",
+    "is_opt": "optional_yn", "is_norm": "norm_yn", "is_act": "act_yn",
+    "stts": "stat_cd", "map_stts": "map_stat_cd", "seen_stts": "presence_stat_cd",
+    "typ": "type_cd", "repr_typ": "repr_type_cd", "prd_typ": "period_type_cd", "doc_typ": "doc_type_cd",
+    "val_typ": "value_type_cd", "cov_typ": "coverage_cd", "subj_role": "subj_role_cd", "geo_scope": "geo_scope_cd",
+    "par_id": "prnt_id", "ord_no": "sort_seq", "prgm_id": "benefit_id", "prgm_ver_id": "benefit_ver_id",
+    "src_rec_id": "src_record_id", "snap_id": "src_snapshot_id", "rnd_id": "aply_round_id",
+    "node_id": "rule_node_id", "qstn_id": "question_id", "mdl_id": "emb_model_id",
+    "emb_inp_hash": "emb_input_hash", "inp_hash": "input_hash", "inp_txt": "input_cont",
+    "raw_txt": "src_cont", "body_txt": "chunk_cont", "quote_txt": "quote_cont", "help_txt": "help_cont",
+    "smry": "summary_cont", "prvdr_cd": "provider_cd", "mdl_nm": "model_nm", "mdl_rev": "model_rev", "cfg_hash": "config_hash"
+  },
+  "views": { "current_chunks": "current_doc_chunk" }
+}
